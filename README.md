@@ -1,0 +1,3 @@
+This project is a recreation of the playstation website (https://direct.playstation.com/en-us/latest). Bootstrap was used for the visual aspect and responsiveness of the website including the nav bar, carousel, cards, table, contact form, and footer. 
+I used it to change background colors using primary, secondary, dark, light, etc. Also the styling of the table, nav bar, and contact form. I used bootstrap to set up the cards in a div and added some images.
+js functions I added were to: add products you wanted to your cart, toggle dark mode for the website, keep track of products and prices in cart, sum up the prices and show the total for checkout, and a welcome message for the website itself.
