@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootsrap and JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg-black text-white w-100 text-end p-1" style="height: 30px;"><b>SONY</b></div>
+<nav class="bg-dark text-white w-100 p-3" style="height: 60px;">
+    <div class="container-fluid d-flex align-items-center">  
+    <div class="flex-row">
+        <ul class="navbar-nav d-flex flex-row">
+        <div><img src="https://www.seekpng.com/png/full/303-3037732_icon-playstation-logo-white-transparent.png"style="height: 30px; width: 35px;"></div>
+        <li class="px-3"><a href="homepage.html" class="text-white text-decoration-none">Explore Playstation</a></li>
+        <li class="px-3"><a href="homepage.html" class="text-white text-decoration-none">Home</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">PS5 Consoles</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">PS5 Accessories</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">Games</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">About</a></li>
+        <li class="px-3"><a href="contactpage.html" class="text-white text-decoration-none">Contact</a></li>
+    </ul>
+    </div>
+    </div>
+</nav>
+<div class="bg-light w-100 d-flex align-items-center justify-content-center" style="height: 60px;"><b>Free Standard Delivery On All Orders. Conditions Apply. <a href="#">Learn More</a>.</b></div>
+
+<h1 style="text-indent: 60px;">Shop the latest</h1>
+
+<!-- Carousel -->
+<div id="caro" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#caro" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#caro" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#caro" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://media.direct.playstation.com/is/image/sierialto/buy-death-strading-2-dualsense-en-us-dt-1600x508?$Promotions_Wide_Desktop$" alt="Controller" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.direct.playstation.com/is/image/sierialto/ps5-consoles-en-us-dt-1600x508?$Promotions_Wide_Desktop$" alt="PS5" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.direct.playstation.com/is/image/sierialto/Accessibility_FeaturedBanner_Desktop_EN?$Promotions_Wide_Desktop$" alt="Accessibility" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#caro" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#caro" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+   <!---Cards to display products--->
+  <div class="container my-5">
+    <h1 class="mb-4">Featured</h1>
+    <!--row 1-->
+    <div class="row text-center g-4">
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="https://media.direct.playstation.com/is/image/sierialto/ps-portal-black-hero-1">
+                <div class="card body"><p class="card-text">PlayStation Portal Remote Player</p>
+                <h6>$199.99</h6>
+                <button class="btn btn-outline-danger">Add <i class="bi bi-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="https://media.direct.playstation.com/is/image/sierialto/DSEdge-black-Hero-1">
+                <div class="card body"><p class="card-text">DualSense Edge Wireless Controller</p>
+                <h6>$199.99</h6>
+                <button class="btn btn-outline-danger">Add <i class="bi bi-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="https://media.direct.playstation.com/is/image/sierialto/Hori-fighting-stick-hero-1-forward-facing">
+                <div class="card body"><p class="card-text">Hori Fighting Stick Alpha</p>
+                <h6>$199.99</h6>
+                <button class="btn btn-outline-danger">Add <i class="bi bi-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="https://media.direct.playstation.com/is/image/sierialto/R5Parctic-hero-2_900x900">
+                <div class="card body"><p class="card-text">Nacon Revolution 5 Pro Controller - Arctic Camo</p>
+                <h6>$199.99</h6>
+                <button class="btn btn-outline-danger">Add <i class="bi bi-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!--Table-->
+<div class="container mt-5">
+    <h2 class="mb-4">Popular and Upcomming Games</h2>
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Game</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Release Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ghost of Yotei</td>
+                <td>$69.99</td>
+                <td>M</td>
+                <td>10/2/25</td>
+            </tr>
+            <tr>
+                <td>The Last of Us</td>
+                <td>$69.99</td>
+                <td>M</td>
+                <td>Out Now</td>
+            </tr>
+            <tr>
+                <td>Death Stranding 2</td>
+                <td>$69.99</td>
+                <td>M</td>
+                <td>6/26/25</td>
+            </tr>
+            <tr>
+                <td>MLB The Show 25</td>
+                <td>$69.99</td>
+                <td>E</td>
+                <td>Out Now</td>
+            </tr>
+            <tr>
+                <td>DOOM: The Dark Ages</td>
+                <td>$69.99</td>
+                <td>M</td>
+                <td>Out Now</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    <!--Emulate footer of Sony Page-->
+<footer class="bg-primary text-white pt-4">
+    <div class="container-fluid px-5">
+        <div class="text-center flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">PS Direct</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">About SIE</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Terms of Use</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Privacy Policy</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Refund Policy</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Health Warning</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Order Status</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Accessibility</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Affiliate</a></li>
+        </ul>
+        </div>
+        <div class="text-center small"><p class="mb-1">Website &copy; 2025 Sony Interactive Entertainment LLC. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved.</p>
+        <p class="mb-0">Country: USA</p></div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

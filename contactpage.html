@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootsrap and JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg-black text-white w-100 text-end p-1" style="height: 30px;"><b>SONY</b></div>
+<nav class="bg-dark text-white w-100 p-3" style="height: 60px;">
+    <div class="container-fluid d-flex align-items-center">  
+    <div class="flex-row">
+        <ul class="navbar-nav d-flex flex-row">
+        <div><img src="https://www.seekpng.com/png/full/303-3037732_icon-playstation-logo-white-transparent.png"style="height: 30px; width: 35px;"></div>
+        <li class="px-3"><a href="homepage.html" class="text-white text-decoration-none">Explore Playstation</a></li>
+        <li class="px-3"><a href="homepage.html" class="text-white text-decoration-none">Home</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">PS5 Consoles</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">PS5 Accessories</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">Games</a></li>
+        <li class="px-3"><a href="#" class="text-white text-decoration-none">About</a></li>
+        <li class="px-3"><a href="contactpage.html" class="text-white text-decoration-none">Contact</a></li>
+    </ul>
+    </div>
+    </div>
+</nav>
+
+<!--Contact Form-->
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h3 class="mb-4">Contact Us</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Type Your Message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>            
+        </form>
+    </div>
+</div>
+
+<!--Modal for pop up-->       
+<div class="modal fade"
+id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="submitModalLabel">Message Sent</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        Your message has been received.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+    <!--Emulate footer of Sony Page-->
+<footer class="bg-primary text-white pt-4">
+    <div class="container-fluid px-5">
+        <div class="text-center flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">PS Direct</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">About SIE</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Terms of Use</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Privacy Policy</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Refund Policy</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Health Warning</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Order Status</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Accessibility</a></li>
+            <li class="mx-2"><a href="#" class="text-white text-decoration-none small">Affiliate</a></li>
+        </ul>
+        </div>
+        <div class="text-center small"><p class="mb-1">Website &copy; 2025 Sony Interactive Entertainment LLC. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved.</p>
+        <p class="mb-0">Country: USA</p></div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script> function showModal() {
+    const modal = new
+    boostrap.Modal(document.getElementById('submitModal'));
+    modal.show();
+} </script>
+</body>
+</html>
